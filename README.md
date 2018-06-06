@@ -1,3 +1,36 @@
+# rinetd
+
+## Intro
+rinetd, port mapped tools
+
+## Prerequisites
+
+### Get the latest source code
+
+To get the latest source code:
+
+```bash
+git clone https://github.com/brinkqiang/rinetd.git
+cd rinetd
+
+yum install gettext gcc autoconf libtool automake make asciidoc xmlto c-ares-devel libev-devel
+
+sudo libtoolize && sudo aclocal && sudo autoheader && sudo autoconf && sudo automake --add-missing
+
+sh configure
+make
+make install
+```
+### config
+```
+vim /usr/local/etc/rinetd.conf
+```
+### run
+```
+rinetd -c /usr/local/etc/rinetd.conf
+```
+
+## License
 rinetd, by Thomas Boutell and Sam Hocevar. Released under the terms
 of the GNU General Public License, version 2 or later.
 
